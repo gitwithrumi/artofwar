@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art of War: Legions | Tips</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="nav">
+      <div id="nav-part--1">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/Logo.webp"
+              alt="Art of War"
+              width="160"
+              height="80"
+            />
+          </a>
+        </div>
+      </div>
+      <input type="checkbox" id="navbar-active" />
+      <label for="navbar-active" class="open-navbar-button"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#5f6368"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          /></svg
+      ></label>
+      <div id="nav-part--2">
+        <ul>
+          <label for="navbar-active" class="close-navbar-button"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></label>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About </a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      <div id="tips-header" class="container">
+        <h1 class="section-heading">Welcome to tips section, commander!</h1>
+        <br />
+        <p class="section-para">
+          Here you will get the tips you need to boost your gameplay 📋!
+        </p>
+      </div>
+      <div id="tips-div" class="container">
+        <div
+          class="tips-item"
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-direction="horizontal"
+          onclick="toggleAnswer(9)"
+        >
+          <div class="tips-question">Beginner Tips ⚜</div>
+          <div class="tips-answer" id="answer9">
+            <strong>#1</strong> Save your gems.<br />
+            <strong>#2</strong> Conserve your hunt medals.<br />
+            <strong>#3</strong> Build a basic army before fusing.<br />
+            <strong>#4</strong> Don't waste your attack on unsure results.<br />
+            <strong>#5</strong> Try to reach level 8000 in the shortest time.<br />
+            <strong>#6</strong> Always do your daily arena attacks near reset
+            time.<br />
+            <strong>#7</strong> When doing troop updates make sure to check your
+            defence formation beacause you need to re-deploy it.<br />
+            <strong>#8</strong> When choosing a clan make sure to choose
+            according what you are looking for.<br />
+            <strong>#9</strong> Focus on 1 ledendary hero to raise above level
+            15 in arena.<br />
+            <strong>#10</strong> Be patient. Be resourceful. Always improve!
+          </div>
+          <i class="tips-arrow fas fa-chevron-down"></i>
+        </div>
+        <div
+          class="tips-item"
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-direction="horizontal"
+          onclick="toggleAnswer(1)"
+        >
+          <div class="tips-question">where to spend your gems🔷 ?</div>
+          <div class="tips-answer" id="answer1">
+            - Unless you plan to do in-app purchases, you should save gems to
+            obtain heroes.
+            <br />
+
+            - For new players, the wheel of fortune is a good way of obtain
+            heroes. With the wheel of fortune, a player can obtain a hero shard
+            for an average cost of 2,100 gems. The wheel also allows the player
+            to obtain useful rare/epic hero and troops.
+            <br />
+            - The second best way of obtaining a legendary hero is play Card
+            Master, where the average cost is 2,700 gems per shard.
+            <br />
+            - Do not use gems to open hero chests.
+            <br />
+            - Do not use gems to open super card packs. Only use vouchers for
+            those.
+            <br />
+            - Do not use gems to buy troops.
+            <br />
+            - Do not use gems on temple of fusion until you have a high-level
+            legendary hero.
+          </div>
+          <i class="tips-arrow fas fa-chevron-down"></i>
+        </div>
+        <div
+          class="tips-item"
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-direction="horizontal"
+          onclick="toggleAnswer(2)"
+        >
+          <div class="tips-question">Game codes and phrases :</div>
+          <div class="tips-answer" id="answer2">
+            Nerf : make a hero or troop do less that its supposed to do in its
+            capacity (weaken) Buff: opposite of "nerf"
+            <br />
+            Active Skill:
+            <br />
+            It refers to hero skill that needs be triggered or manually
+            initiated by the player (we have option on button for it to be run
+            automatically)
+            <br />
+            Passive Skill:
+            <br />
+            refers to hero skill that is always present and running on the whole
+            duration of the game.
+            <br />
+            No need to trigger it to function CM : CARD MASTER event WoF: WHEEL
+            OF FORTUNE event HT: Hero Trials HHH: refers to hero HOHENHEIM
+          </div>
+          <i class="tips-arrow fas fa-chevron-down"></i>
+        </div>
+        <div
+          class="tips-item"
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-direction="horizontal"
+          onclick="toggleAnswer(3)"
+        >
+          <div class="tips-question">Formation Tips:</div>
+          <div class="tips-answer" id="answer3">
+            - The main strategy to pass a hard level and defend in the arena is
+            to increase your army soldier counter by using multi-load troops
+            that load 9 units instead of single load troops. No matter how
+            strong a single load troop is (with exception to demons and golems
+            who are incredibly strong) multi-load troops are stronger because 9
+            soldiers combined typically have higher stats than a single load
+            troop.
+            <br />
+            - Use undead soldiers (they revive once during a battle), assassins
+            and apprentices (they are fast to kill enemies in the back row),
+            paladins (they have the highest combined HP and can shield friendly
+            troops), harbingers of fire (who are high DPS troops that deal AoE
+            damage) and archers (who deal ranged DPS damage).
+            <br />
+            - Fortify your first row to make it as durable as possible (if you
+            want to know why just ask us).
+          </div>
+          <i class="tips-arrow fas fa-chevron-down"></i>
+        </div>
+        <div
+          class="tips-item"
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-direction="horizontal"
+          onclick="toggleAnswer(4)"
+        >
+          <div class="tips-question">Front Line Strategy ☣️</div>
+          <div class="tips-answer" id="answer4">
+            Stone Golems, Rhino Knights, Pumpkin Guards, Sacred Swordsmen, and
+            Meteor Golems are hard to kill troops for the front row. Please
+            choose one or two of them to attract attention, and until they die,
+            your enemy won't turn and defend their backline. If you don't have a
+            good Stone Golem or Rhino Knights, other tanks can be used, but a 9
+            or 10 Stone Golem or Rhino Knight is probably your best option.
+            <br />
+            The rest of row one should be Magic Apprentices, Ghost Assassins, or
+            Demons, which can't be targeted because they fly or blink away.
+            Doing this ensures that the durable tank you set out is the targeted
+            troop.
+            <br />
+            Do not use 9-load melee or ranged troops. As soon as any of those
+            dies, whatever was targeting those will retarget. The goal is to
+            keep enemy troops busy for as long as possible
+            <br />
+            Putting zero targetable troops in the first row simply means that
+            all the troops will target the troops in the second row so always
+            have a high level strong tank in first row like SS MG
+          </div>
+          <i class="tips-arrow fas fa-chevron-down"></i>
+        </div>
+        <div
+          class="tips-item"
+          data-scroll
+          data-scroll-speed="-2"
+          data-scroll-direction="horizontal"
+          onclick="toggleAnswer(5)"
+        >
+          <div class="tips-question">Back Line Defensive Strategy 🔙</div>
+          <div class="tips-answer" id="answer5">
+            An important key to winning in the arena is building a strong
+            backline defence. We will look at the keys to successfully guard the
+            rear of your formation. This guide is about how to set up the back
+            row or two last lines of your formation. Before reading it, check
+            out our guide on Front Line Strategy. Even if you don't have a good
+            front line, a good backline will protect you too.
+            <br />
+            Good Backline defenders can take a long time to build.
+            <br />
+            Good troops for a backline are generally: Stone Golems, Pirate
+            Ships, Pumpkin Guards, Undeads, Voodoo Dolls, and Goblikazies.
+            <br />
+            The best troops vary by the hero you use. Nuns are great for Selene,
+            and Brawlers are great for Arthur due to their specific boosts. But,
+            great defensive troops can take a while to build to high levels.
+            <br />
+            You have to use the troops you have until you have the troops you
+            want. <br />
+            Paladins and Cactus can be good beginner defensive troops until you
+            build up Undead Soldiers. <br />
+            Undead Soldiers are better than Paladins because they die, then
+            respawn and retarget.
+            <br />
+            Paladins often die before turning around. Beast Masters, Witchcraft
+            Totems, and Soul Hunters can take the place of Pumpkin Guards until
+            high-level units can be build
+          </div>
+          <i class="tips-arrow fas fa-chevron-down"></i>
+        </div>
+        <div
+          class="tips-item"
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-direction="horizontal"
+          onclick="toggleAnswer(6)"
+        >
+          <div class="tips-question">Finding your way around? ⚔️</div>
+          <div class="tips-answer" id="answer6">
+            <a target="_blank" href="images/overview-intro.png">
+              <div class="hover-image">
+                <img
+                  src="images/overview-intro.png"
+                  alt="Art of War: Legions | Tips"
+                /></div
+            ></a>
+            <a target="_blank" href="images/home-screen.png">
+              <div class="hover-image">
+                <img
+                  src="images/home-screen.png"
+                  alt="Art of War: Legions | Tips"
+                /></div
+            ></a>
+            <a target="_blank" href="images/wheel-of-fortune.png">
+              <div class="hover-image">
+                <img
+                  src="images/wheel-of-fortune.png"
+                  alt="Art of War: Legions | Tips"
+                /></div
+            ></a>
+          </div>
+          <i class="tips-arrow fas fa-chevron-down"></i>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="footer-1">
+          <a href="index.html" class="logo">
+            <img src="images/Logo.webp" alt="Art Of War: Legions" />
+          </a>
+          <div id="pages">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="updates.html">Updates</a>
+            <a href="tips.html">Tips</a>
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div id="socials">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/artofwar_legions/"
+              class="socials"
+              ><img
+                src="images/instagram-icon.webp"
+                alt="Art of War: Instagram"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/GameAoW"
+              class="socials"
+              ><img src="images/facebook-icon.webp" alt="Art of War: Facebook"
+            /></a>
+            <a
+              target="_blank"
+              href="https://twitter.com/GameAoW"
+              class="socials"
+              ><img src="images/twitter-icon.webp" alt="Art of War: Twitter"
+            /></a>
+            <a
+              target="_blank"
+              href="https://discord.com/invite/artofwar"
+              class="socials"
+              ><img src="images/discord-icon.webp" alt="Art of War: Discord"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@ArtofWarLegions"
+              class="socials"
+              ><img src="images/youtube-icon.webp" alt="Art of War: YouTube"
+            /></a>
+          </div>
+        </div>
+        <div id="footer-2">
+          <p>copyright ©️Fastone Games HK 2019. All rights reserved.</p>
+          <a target="_blank" href="#"><p>Terms and conditions</p></a>
+          <a target="_blank" href="#"><p>Privacy policy</p></a>
+          <a
+            target="_blank"
+            href="https://gitwithrumi.github.io/Rumidevelops/index.html"
+            ><p>Created with 💖 by RumiDevelops</p></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
