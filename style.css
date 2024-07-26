@@ -121,6 +121,27 @@ a {
 
 /* REUSABLES END */
 
+/*** LOADER START ***/
+
+#loader {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loader h1 {
+  font-size: 100px;
+  font-family: bangers;
+  font-weight: 100;
+  color: var(--text-secondary);
+}
+
+/*** LOADER END ***/
+
 /*** NAVBAR START ***/
 
 #nav {
@@ -686,6 +707,13 @@ textarea::placeholder {
   }
 
   /* REUSABLES END */
+
+  /*** LOADER START ***/
+
+  #loader h1 {
+    font-size: 70px;
+  }
+  /*** LOADER END ***/
 
   /*** NAVBAR START ***/
 
