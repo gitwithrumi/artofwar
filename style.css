@@ -134,7 +134,7 @@ a {
   left: 0;
   top: 0;
   transform: translate(calc(-50% + 15px), -50%);
-  z-index: 99;
+  z-index: 9999;
 }
 
 .cursor2 {
@@ -147,7 +147,7 @@ a {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width 0.3s, height 0.3s, opacity 0.3s;
-  z-index: 99;
+  z-index: 9999;
 }
 
 .hover {
