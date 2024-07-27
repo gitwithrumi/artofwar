@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       // Upscroll
       navbar.style.opacity = "1"; // Show navbar
-      navbar.style.zIndex = "999";
+      navbar.style.zIndex = "9999";
     }
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
   });
