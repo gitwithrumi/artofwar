@@ -134,7 +134,7 @@ a {
   left: 0;
   top: 0;
   transform: translate(calc(-50% + 15px), -50%);
-  z-index: 9999;
+  z-index: 10;
 }
 
 .cursor2 {
@@ -147,7 +147,7 @@ a {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width 0.3s, height 0.3s, opacity 0.3s;
-  z-index: 9999;
+  z-index: 10;
 }
 
 .hover {
@@ -175,7 +175,7 @@ a {
   width: 100%;
   background-color: var(--bg-secondary);
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,7 +202,7 @@ a {
   justify-content: space-between;
   padding: 30px 45px;
   position: fixed;
-  z-index: 999;
+  z-index: 9;
   transition: 0.3s opacity linear;
 }
 .logo img {
@@ -210,7 +210,7 @@ a {
   width: 170px;
   object-fit: cover;
   object-position: center;
-  z-index: 999;
+  z-index: 9;
 }
 #navbar-active {
   display: none;
@@ -248,7 +248,7 @@ a {
   text-decoration: none;
   color: var(--text-secondary);
   font-family: bangers;
-  z-index: 999;
+  z-index: 9;
 }
 
 /*** NAVBAR END ***/
@@ -808,7 +808,7 @@ textarea::placeholder {
     justify-content: space-between;
     padding: 30px 45px;
     position: fixed;
-    z-index: 999;
+    z-index: 9;
     transition: 0.3s opacity linear;
   }
   .logo img {
@@ -824,7 +824,7 @@ textarea::placeholder {
     height: 100vh;
     width: 100vw;
     background-color: var(--bg-secondary);
-    z-index: 999;
+    z-index: 9;
     transition: 0.5s ease-out all;
   }
   #navbar-active {
@@ -1391,7 +1391,7 @@ textarea::placeholder {
     justify-content: space-between;
     padding: 30px 35px;
     position: fixed;
-    z-index: 999;
+    z-index: 9;
     transition: 0.3s opacity linear;
   }
   .logo img {
