@@ -143,23 +143,3 @@ iframe.addEventListener("mouseout", () => {
   cursor.classList.remove("hide-cursor");
   cursorinner.classList.remove("hide-cursor");
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  let lastScrollTop = 0;
-  const navbar = document.getElementById("nav");
-
-  window.addEventListener("scroll", function () {
-    const currentScroll = window.scrollY || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop) {
-      // Downscroll
-      navbar.style.opacity = "0"; // Hide navbar
-      navbar.style.zIndex = "-1";
-    } else {
-      // Upscroll
-      navbar.style.opacity = "1"; // Show navbar
-      navbar.style.zIndex = "9999";
-    }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-  });
-});
