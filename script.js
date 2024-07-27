@@ -58,13 +58,11 @@ tl.to("#loader h1", {
   delay: 0.5,
   duration: 0.8,
   onStart: time(),
-  easing: "easeOutExpo",
 });
 
 tl.to("#loader", {
   top: "-100%",
   delay: 0.5,
-  easing: "easeOutExpo",
   duration: 1.1,
 });
 
@@ -88,24 +86,6 @@ function toggleAnswer(id) {
     item.classList.remove("open");
   }
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  let lastScrollTop = 0;
-  const navbar = document.getElementById("nav");
-
-  window.addEventListener("scroll", function () {
-    const currentScroll = window.scrollY || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop) {
-      // Downscroll
-      navbar.style.opacity = "0"; // Hide navbar
-    } else {
-      // Upscroll
-      navbar.style.opacity = "1"; // Show navbar
-    }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-  });
-});
 
 var cursor = document.querySelector(".cursor");
 var cursorinner = document.querySelector(".cursor2");
@@ -162,4 +142,24 @@ iframe.addEventListener("mouseover", () => {
 iframe.addEventListener("mouseout", () => {
   cursor.classList.remove("hide-cursor");
   cursorinner.classList.remove("hide-cursor");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let lastScrollTop = 0;
+  const navbar = document.getElementById("nav");
+
+  window.addEventListener("scroll", function () {
+    const currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Downscroll
+      navbar.style.opacity = "0"; // Hide navbar
+      navbar.style.zIndex = "-1";
+    } else {
+      // Upscroll
+      navbar.style.opacity = "1"; // Show navbar
+      navbar.style.zIndex = "999";
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+  });
 });
