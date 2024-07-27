@@ -43,34 +43,40 @@ var tl = gsap.timeline();
 
 function time() {
   var a = 0;
-  setInterval(function () {
+  var interval = setInterval(function () {
     a = a + Math.floor(Math.random() * 17) + 1;
     if (a < 100) {
       document.querySelector("#loader h1").innerHTML = a + "%";
     } else {
       a = 100;
       document.querySelector("#loader h1").innerHTML = a + "%";
+      clearInterval(interval);
     }
   }, 150);
 }
 
-tl.to("#loader h1", {
-  delay: 0.5,
-  duration: 1.5,
-  onStart: time(),
-});
+// Start the loader animation immediately
+time();
 
-tl.to("#loader", {
-  top: "-100%",
-  delay: 0.5,
-  duration: 1.2,
-});
-
-tl.from("#nav #nav-part--1 .logo, #nav-part--2 ul li", {
-  y: "-100%",
-  duration: 0.3,
-  opacity: 0,
-  stagger: 0.1,
+// GSAP Timeline for when the page is fully loaded
+window.addEventListener("load", function () {
+  tl.to("#loader h1", {
+    duration: 0.5,
+  })
+    .to("#loader", {
+      top: "-100%",
+      delay: 0.5,
+      duration: 1.2,
+      onComplete: function () {
+        document.getElementById("loader").style.display = "none";
+      },
+    })
+    .from("#nav #nav-part--1 .logo, #nav-part--2 ul li", {
+      y: "-100%",
+      duration: 0.3,
+      opacity: 0,
+      stagger: 0.1,
+    });
 });
 
 function toggleAnswer(id) {
