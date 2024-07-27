@@ -210,6 +210,7 @@ a {
   width: 170px;
   object-fit: cover;
   object-position: center;
+  z-index: 999;
 }
 #navbar-active {
   display: none;
@@ -247,6 +248,7 @@ a {
   text-decoration: none;
   color: var(--text-secondary);
   font-family: bangers;
+  z-index: 999;
 }
 
 /*** NAVBAR END ***/
