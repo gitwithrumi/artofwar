@@ -63,7 +63,7 @@ tl.to("#loader h1", {
 tl.to("#loader", {
   top: "-100%",
   delay: 0.5,
-  duration: 1.1,
+  duration: 1.2,
 });
 
 gsap.from("#nav #nav-part--1 .logo, #nav-part--2 ul li", {
