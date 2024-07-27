@@ -51,12 +51,12 @@ function time() {
       a = 100;
       document.querySelector("#loader h1").innerHTML = a + "%";
     }
-  }, 120);
+  }, 150);
 }
 
 tl.to("#loader h1", {
   delay: 0.5,
-  duration: 0.8,
+  duration: 1.5,
   onStart: time(),
 });
 
@@ -66,10 +66,9 @@ tl.to("#loader", {
   duration: 1.2,
 });
 
-gsap.from("#nav #nav-part--1 .logo, #nav-part--2 ul li", {
+tl.from("#nav #nav-part--1 .logo, #nav-part--2 ul li", {
   y: "-100%",
   duration: 0.3,
-  delay: 2.7,
   opacity: 0,
   stagger: 0.1,
 });
