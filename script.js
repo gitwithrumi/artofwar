@@ -41,7 +41,7 @@ init();
 
 var tl = gsap.timeline();
 let startTime = Date.now();
-let minimumDuration = 3000; // Minimum duration for the loader animation (3 seconds)
+let minimumDuration = 2000;
 
 function incrementLoader(actualDuration) {
   return new Promise((resolve) => {
@@ -56,9 +56,15 @@ function incrementLoader(actualDuration) {
         clearInterval(interval);
         resolve();
       }
-    }, 50); // Update every 50ms for smoother increment
+    }, 20); // Update every 50ms for smoother increment
   });
 }
+
+tl.from("#loader", {
+  bottom: "-100%",
+  duration: 1.2,
+  delay: 0,
+});
 
 window.addEventListener("load", function () {
   let loadTime = Date.now() - startTime;
