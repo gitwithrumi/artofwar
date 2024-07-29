@@ -773,10 +773,12 @@ textarea::placeholder {
 
   .cursor {
     display: none;
+    background: none;
   }
 
   .cursor2 {
     display: none;
+    border: none;
   }
 
   .hover {

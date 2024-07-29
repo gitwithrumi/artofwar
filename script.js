@@ -70,27 +70,84 @@ window.addEventListener("load", function () {
   let loadTime = Date.now() - startTime;
 
   incrementLoader(loadTime).then(() => {
-    tl.to("#loader h1", {
-      duration: 0.5,
-    })
-      .to("#loader", {
-        top: "-100%",
-        delay: 0.5,
-        duration: 1.2,
-        onComplete: function () {
-          document.getElementById("loader").style.display = "none";
-        },
-      })
-      .from("#nav #nav-part--1 .logo, #nav-part--2 ul li", {
-        y: "-100%",
-        duration: 0.3,
-        opacity: 0,
-        stagger: 0.1,
-      });
+    tl.to("#loader", {
+      top: "-100%",
+      delay: 0.3,
+      duration: 1.2,
+      onComplete: function () {
+        document.getElementById("loader").style.display = "none";
+      },
+    }).from("#nav #nav-part--1 .logo, #nav-part--2 ul li", {
+      y: "-100%",
+      duration: 0.15,
+      opacity: 0,
+      easing: "easeOut",
+      stagger: 0.1,
+    });
   });
 });
 
 incrementLoader(minimumDuration);
+
+function redirectToEmail() {
+  var email = "armies_help@boooea.com";
+  var subject = "Help Request";
+  var body = "Please provide details about your issue.";
+
+  var mailtoLink =
+    "mailto:" +
+    email +
+    "?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+
+  var win = window.open(mailtoLink, "_blank");
+
+  // Fallback to common webmail services if mailto link fails
+  setTimeout(function () {
+    if (!win || win.closed || typeof win.closed == "undefined") {
+      var gmailLink =
+        "https://mail.google.com/mail/?view=cm&fs=1&to=" +
+        email +
+        "&su=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+      var yahooLink =
+        "https://compose.mail.yahoo.com/?to=" +
+        email +
+        "&subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+      var outlookLink =
+        "https://outlook.live.com/owa/?path=/mail/action/compose&to=" +
+        email +
+        "&subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+      if (
+        confirm(
+          "It looks like your email client isn't configured. Would you like to open Gmail?"
+        )
+      ) {
+        window.open(gmailLink, "_blank");
+      } else if (confirm("Would you like to open Yahoo Mail?")) {
+        window.open(yahooLink, "_blank");
+      } else if (confirm("Would you like to open Outlook?")) {
+        window.open(outlookLink, "_blank");
+      } else {
+        alert(
+          "You were unable to redirect to email. Please copy the email address: " +
+            email
+        );
+      }
+    }
+  }, 1000);
+}
 
 function toggleAnswer(id) {
   const answer = document.getElementById(`answer${id}`);
